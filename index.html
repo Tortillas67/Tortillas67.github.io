@@ -2,94 +2,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio de Personal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directorio de Personal</title>
 
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        header{
-            background-color: #0066cc;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+header{
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-        main{
-            padding: 20px;
-            text-align: center;
-        }
+main{
+    padding: 20px;
+}
 
-        .empleado{
-            display: inline-block;
-            margin: 15px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        }
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 
-        .empleado img{
-            width: 100px;
-            height: auto;
-            border-radius: 8px;
-        }
+th{
+    background-color: #0066cc;
+    color: white;
+    padding: 12px;
+}
 
-        .nombre{
-            margin-top: 10px;
-            font-weight: bold;
-        }
+td{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
 
-        footer{
-            background-color: #0066cc;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+td img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+tr:hover{
+    background-color: #f9f9f9;
+}
+
+footer{
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Directorio de Personal</h1>
-        <p>Tortillas 67</p>
-    </header>
+<header>
+    <h1>Directorio de Personal</h1>
+    <p>Tortillas 67</p>
+</header>
 
-    <main>
+<main>
 
-        <div class="empleado">
+<table>
+    <tr>
+        <th>Fotografía</th>
+        <th>Nombre</th>
+    </tr>
+
+    <tr>
+        <td>
             <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Cesar%20Quintal.jpeg" alt="Cesar Quintal">
-            <div class="nombre">Cesar Quintal</div>
-        </div>
+        </td>
+        <td>Cesar Quintal</td>
+    </tr>
 
-        <div class="empleado">
+    <tr>
+        <td>
             <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Erick%20Meneses.jpeg" alt="Erick Meneses">
-            <div class="nombre">Erick Meneses</div>
-        </div>
+        </td>
+        <td>Erick Meneses</td>
+    </tr>
 
-        <div class="empleado">
+    <tr>
+        <td>
             <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Jacqueline%20Pat.jpeg" alt="Jacqueline Pat">
-            <div class="nombre">Jacqueline Pat</div>
-        </div>
+        </td>
+        <td>Jacqueline Pat</td>
+    </tr>
 
-        <div class="empleado">
+    <tr>
+        <td>
             <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Victor%20Julian.jpeg" alt="Victor Julian">
-            <div class="nombre">Victor Julian</div>
-        </div>
+        </td>
+        <td>Victor Julian</td>
+    </tr>
 
-    </main>
+</table>
 
-    <footer>
-        © 2026 Tortillas 67 | Todos los derechos reservados
-    </footer>
+</main>
+
+<footer>
+    © 2026 Tortillas 67 | Todos los derechos reservados
+</footer>
 
 </body>
 </html>
