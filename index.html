@@ -3,90 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Directorio de Personal</title>
+<title>Nosotros - Tortillas 67</title>
 
 <style>
 body{
- font-family: Arial, sans-serif;
- margin: 0;
- padding: 0;
- background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 header{
- background-color: #0066cc;
- color: white;
- text-align: center;
- padding: 20px;
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
 nav{
- background-color: #004c99;
- text-align: center;
- padding: 15px;
+    background-color: #004c99;
+    text-align: center;
+    padding: 15px;
 }
 
 nav a{
- color: white;
- text-decoration: none;
- margin: 0 20px;
- font-weight: bold;
- font-size: 18px;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 nav a:hover{
- color: #ffcc00;
+    color: #ffcc00;
 }
 
 main{
- padding: 20px;
+    padding: 30px;
 }
 
-table{
- width: 100%;
- border-collapse: collapse;
- background-color: white;
- box-shadow: 0 0 10px rgba(0,0,0,0.2);
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
-th{
- background-color: #0066cc;
- color: white;
- padding: 12px;
+.persona{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
-th a{
- color: white;
- text-decoration: none;
+.persona img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-th a:hover{
- color: #ffcc00;
-}
-
-td{
- border: 1px solid #ddd;
- padding: 15px;
- text-align: center;
-}
-
-td img{
- width: 120px;
- height: 120px;
- object-fit: cover;
- border-radius: 10px;
-}
-
-tr:hover{
- background-color: #f9f9f9;
+.persona h3{
+    margin-top: 10px;
+    color: #0066cc;
 }
 
 footer{
- background-color: #0066cc;
- color: white;
- text-align: center;
- padding: 15px;
- margin-top: 20px;
+    background-color: #0066cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 </style>
 </head>
@@ -94,64 +82,44 @@ footer{
 <body>
 
 <header>
- <h1>Directorio de Personal</h1>
- <p>Tortillas 67</p>
+    <h1>Nosotros</h1>
+    <p>Equipo de Tortillas 67</p>
 </header>
 
 <nav>
- <a href="nosotros.html">Nosotros</a>
- <a href="servicios.html">Servicios</a>
- <a href="equipo.html">Equipo</a>
+    <a href="index.html">Inicio</a>
 </nav>
 
 <main>
 
-<table>
- <tr>
-  <th>Fotografía</th>
+<div class="galeria">
 
-  <!-- HIPERVÍNCULO (LINK) EN EL TÍTULO INTEGRANTES -->
-  <th>
-   <a href="https://tortillas67.github.io/Fotos%20de%20Tortillas67/" target="_blank">
-    Integrantes
-   </a>
-  </th>
- </tr>
+    <div class="persona">
+        <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Cesar%20Quintal.jpeg" alt="Cesar Quintal">
+        <h3>Cesar Quintal</h3>
+    </div>
 
- <tr>
-  <td>
-   <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Cesar%20Quintal.jpeg" alt="Cesar Quintal">
-  </td>
-  <td>Cesar Quintal</td>
- </tr>
+    <div class="persona">
+        <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Erick%20Meneses.jpeg" alt="Erick Meneses">
+        <h3>Erick Meneses</h3>
+    </div>
 
- <tr>
-  <td>
-   <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Erick%20Meneses.jpeg" alt="Erick Meneses">
-  </td>
-  <td>Erick Meneses</td>
- </tr>
+    <div class="persona">
+        <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Jacqueline%20Pat.jpeg" alt="Jacqueline Pat">
+        <h3>Jacqueline Pat</h3>
+    </div>
 
- <tr>
-  <td>
-   <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Jacqueline%20Pat.jpeg" alt="Jacqueline Pat">
-  </td>
-  <td>Jacqueline Pat</td>
- </tr>
+    <div class="persona">
+        <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Victor%20Julian.jpeg" alt="Victor Julian">
+        <h3>Victor Julian</h3>
+    </div>
 
- <tr>
-  <td>
-   <img src="https://tortillas67.github.io/Fotos%20de%20Tortillas67/Victor%20Julian.jpeg" alt="Victor Julian">
-  </td>
-  <td>Victor Julian</td>
- </tr>
-
-</table>
+</div>
 
 </main>
 
 <footer>
- © 2026 Tortillas 67 | Todos los derechos reservados
+    © 2026 Tortillas 67 | Todos los derechos reservados
 </footer>
 
 </body>
